@@ -1,0 +1,22 @@
+{
+  "name": "rehype-widont",
+  "version": "0.1.0",
+  "description": "Rehype plugin to prevent lines with single words",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "repository": "https://github.com/radiojhero/rehype-widont",
+  "author": "Armando Meziat <amf-commits@mezi.at>",
+  "license": "MIT",
+  "dependencies": {
+    "hast-util-select": "^4.0.2",
+    "unist-util-visit": "^2.0.3"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "jest-nyancat-reporter": "^2.0.0",
+    "rehype": "^11.0.0"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}
