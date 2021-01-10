@@ -31,7 +31,7 @@ function visitNodes(node) {
   for (var index = 0; index < textNodes.length; index++) {
     var textNode = textNodes[index];
 
-    if (/\s/.test(textNode.value)) {
+    if (ws.test(textNode.value)) {
       textNode.value = insertNbSp(
         textNode.value,
         !index,
