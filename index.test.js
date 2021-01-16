@@ -76,6 +76,11 @@ const fixtures = [
     "<p>This is <em>very</em>\u00A0nice.</p>",
   ],
   [
+    "handles nested tags, keeps trailing whitespace",
+    "<p>This shall be <em>just fine</em>. </p>",
+    "<p>This shall be <em>just\u00A0fine</em>. </p>",
+  ],
+  [
     "handles custom tags",
     "<div>This shall be just fine.</div>",
     "<div>This shall be just\u00A0fine.</div>",

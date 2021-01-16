@@ -32,12 +32,16 @@ function visitNodes(node) {
     var textNode = textNodes[index];
 
     if (ws.test(textNode.value)) {
-      textNode.value = insertNbSp(
+      var newValue = insertNbSp(
         textNode.value,
         !index,
         index === textNodes.length - 1
       );
-      break;
+      
+      if (textNode.value !== newValue) {
+        textNode.value = newValue;
+        break;
+      }
     }
   }
 }
