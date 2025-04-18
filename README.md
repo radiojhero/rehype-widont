@@ -1,3 +1,8 @@
+> [!IMPORTANT]
+>
+> This package is **deprecated** with the advent of `text-wrap: pretty;` in CSS,
+> which does what this do and more.
+
 rehype-widont
 =============
 
